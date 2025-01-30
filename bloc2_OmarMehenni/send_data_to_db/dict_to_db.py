@@ -29,5 +29,6 @@ def send_data_to_db(pos, data):
    conn.close()
 
 
+
    return {"Message":"Data inserted"}
 
