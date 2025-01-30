@@ -37,3 +37,4 @@ def create_tables():
 
    return {"Tables created succesfully"}
 
+create_tables()
