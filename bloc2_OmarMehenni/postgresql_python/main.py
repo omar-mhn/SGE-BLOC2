@@ -3,8 +3,8 @@ import read_registre as rr
 
 
 #Trucada per executar la funció a l'arxiu create_registre.py
-#cr.create_reg()
-result = rr.read_reg()
+cr.create_reg()
+"""result = rr.read_reg()
 for i in result:
     print('\n')
     print('Nom: ' + i[0])
@@ -12,3 +12,4 @@ for i in result:
     print('telèfon: ' + i[2])
     print('email: ' + i[3])
     print('neixament ' + i[4])
+"""

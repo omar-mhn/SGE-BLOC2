@@ -14,13 +14,13 @@ En las siguientes líneas, probaré paso a paso cómo realizar esta conexión.
 
 Se ha organizado el proyecto creando la carpeta `bloc2_NOMALUMNX`, con una subcarpeta `postgresql_python` que contiene los archivos principales del sistema: `connect.py`, `main.py`, `create_registre.py`, `read_registre.py`, `update_registre.py` y `delete_registre.py`. Todo se puede gestionar desde un IDE como VSCode o PyCharm.
 
-![Structura](CapturAS/Structura.png)
+![Structura](bloc2_OmarMehenni/CapturAS/Structura.png)
  
 # Conexión a la base de datos con Python y PostgreSQL
 
 En este paso, hemos creado el archivo `connect.py`, que permite conectar a una base de datos PostgreSQL. El código utiliza la librería `psycopg2`, que facilita la interacción con PostgreSQL desde Python. Hemos configurado los parámetros de conexión con la información proporcionada en el archivo `docker-compose.yml`, incluyendo el nombre de la base de datos ("the_bear"), el usuario ("admin"), la contraseña ("admin"), el host ("localhost") y el puerto ("5432").
 
-![Connexion à la base de données](CapturAS/cnx.png)
+![Connexion à la base de données](bloc2_OmarMehenni/CapturAS/cnx.png)
 
 Esta conexión es fundamental para realizar las operaciones de gestión de la tabla de clientes: insertar, leer, actualizar y eliminar datos (CRUD). Una vez validada la conexión, podremos empezar a implementar estas funcionalidades en el proyecto.
 # Creación de la tabla y carga de datos desde un CSV a la base de datos
@@ -51,6 +51,20 @@ El script `csv_to_dict.py` leerá el archivo `.csv` y convertirá cada fila en u
 
 El script `dict_to_db.py` tomará el diccionario generado y se encargará de insertar los datos en la base de datos, columna por columna, asegurando que cada campo se corresponda con el campo adecuado en la tabla de la base de datos.
 
-![Inserción del registro](CapturAS/insercio%20del%20registre.png)
+![Inserción del registro](bloc2_OmarMehenni/CapturAS/insercio%20del%20registre.png)
 
+# Creación de un registro en la tabla `Clientes`
 
+## 1. Explicación del archivo `create_registre.py`
+
+Este archivo contiene una función que permite insertar un nuevo registro en la tabla `Clientes` de la base de datos PostgreSQL. La función establece una conexión con la base de datos, ejecuta una consulta SQL para insertar los datos en la tabla y luego cierra la conexión.
+
+## 2. Explicación del archivo `main.py`
+
+En este archivo se llama a la función `create_reg()` definida en `create_registre.py` para probar la inserción del registro en la base de datos. Al ejecutar este archivo, se ejecuta la función que inserta un nuevo registro en la tabla `Clientes`.
+
+## 3. Proceso de inserción
+
+Cuando se ejecuta el archivo `main.py`, la función `create_reg()` inserta un nuevo registro con los valores especificados en la tabla `Clientes`.
+
+![Captura de inserción del registro](bloc2_OmarMehenni/CapturAS/create%20registre.jpg)
