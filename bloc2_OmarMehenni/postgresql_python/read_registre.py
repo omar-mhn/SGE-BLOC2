@@ -11,12 +11,12 @@ def read_reg() :
 
     result = cursor.fetchall()
 
-    print(result[9])
-    print(result[9][3])
-    print(result[14])
-    print(result[14][1])
-    print(result[19])
-    print(result[19][4])
+    #print(result[9])
+    #print(result[9][3])
+    #print(result[14])
+    #print(result[14][1])
+    #print(result[19])
+    #print(result[19][4])
 
 
 

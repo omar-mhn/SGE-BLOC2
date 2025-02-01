@@ -126,6 +126,13 @@ Este permite filtrar los datos obtenidos de la base de datos y centrarse en un r
 ![Fecha de cumpleañs de l’Albert](bloc2_OmarMehenni/CapturAS/Fecha%20de%20cumpleaño%20albert.png)
 
 
+# Visualización de los Registros de Clientes
+
+El código en el archivo `main.py` permite mostrar los registros de los clientes de manera estructurada. La función `create_reg()` inserta un nuevo cliente en la base de datos, y luego la función `read_reg()` recupera todos los registros. A continuación, se imprimen los datos de cada cliente, incluyendo su nombre, dirección, teléfono, correo electrónico y fecha de nacimiento.
+
+Cada registro se muestra de manera estructurada, con un salto de línea entre cada cliente para facilitar la lectura.
+
+![Todo los datos estructurados](bloc2_OmarMehenni/CapturAS/totoCliente.png)
 
 
 
