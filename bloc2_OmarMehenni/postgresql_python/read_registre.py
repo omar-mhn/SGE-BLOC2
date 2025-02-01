@@ -15,3 +15,5 @@ def read_reg() :
 
 
     return result
+
+read_reg()
