@@ -134,6 +134,32 @@ Cada registro se muestra de manera estructurada, con un salto de línea entre ca
 
 ![Todo los datos estructurados](bloc2_OmarMehenni/CapturAS/totoCliente.png)
 
+## Modificación de los Registros  
 
+Para actualizar los datos de un cliente, he utilizado la función `update_reg()`. He hecho la llamada a `update_reg()` desde `main.py` para ver el resultado en pantalla y comprobar que los datos se han modificado correctamente en la base de datos.  
 
+He modificado el `teléfono_cliente` y el `Nombre_Cliente` en la consulta SQL, repitiendo el proceso **tres veces** para observar cómo se actualizaban los datos de distintos clientes.
+
+### Teléfono 
+
+![Modificación en la base de datos](bloc2_OmarMehenni/CapturAS/update.png)
+
+### Nombre
+
+![Cambio de nombre en la base de datos](bloc2_OmarMehenni/CapturAS/cambiar%20el%20nombre.png)
+
+## Eliminación de Registros
+
+Para eliminar registros de la base de datos, he utilizado la función `delete_reg()`. He hecho la llamada a `delete_reg()` desde `main.py`, de manera similar a como lo hice con `update_reg()`, para observar cómo se eliminaban clientes específicos de la base de datos.
+
+Para comprobar el proceso, he eliminado **tres clientes distintos**, modificando el `Nombre_Cliente` en cada consulta SQL. A continuación, muestro la base de datos después de realizar las eliminaciones.
+
+### Clientes eliminados en la base de datos
+#### Antes 
+
+![Estado antes de la eliminación](bloc2_OmarMehenni/CapturAS/Antes.png)
+
+#### Despues 
+
+![Ara](bloc2_OmarMehenni/CapturAS/ara.png)
 
